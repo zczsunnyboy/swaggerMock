@@ -1,0 +1,42 @@
+{
+  "name": "swagger-mock",
+  "version": "1.0.0",
+  "description": "this is can create swagger-mock",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "swagger",
+    "mock",
+    "node",
+    "js"
+  ],
+  "author": "zhangchongzhou",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mkdirp": "^0.5.1",
+    "mockjs": "^1.0.1-beta3",
+    "swagger-parser-mock": "^1.1.2"
+  },
+  "devDependencies": {
+    "http-proxy-middleware": "^0.19.1",
+    "nodemon": "^1.19.1"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules/*",
+      "mockRoutes/*",
+      "apiRoutes/*",
+      "swaggermock.json",
+      "user.json",
+      "differenceDoc.text"
+    ],
+    "delay": "2000"
+  }
+}
